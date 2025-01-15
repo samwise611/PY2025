@@ -1,5 +1,5 @@
 # Hogwarts Sorting Hat Algorithm - www.101computing.net/hogwarts-sorting-hat-algorithm
-# Needs fix currently cumilating all top scores no mater answer 15Jan
+# Needs fix currently cumilating all top scores no mater answer 15Jan... poss label inputs as var's
 
 print('''
 When a new student join Hogwarts school, 
