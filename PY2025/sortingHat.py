@@ -1,4 +1,6 @@
 # Hogwarts Sorting Hat Algorithm - www.101computing.net/hogwarts-sorting-hat-algorithm
+# Needs fix currently cumilating all top scores no mater answer 15Jan
+
 print('''
 When a new student join Hogwarts school, 
 they are assigned to one of the four school houses depending on their personal qualities. 
