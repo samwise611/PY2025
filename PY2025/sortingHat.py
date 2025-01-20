@@ -1,6 +1,4 @@
 # Hogwarts Sorting Hat Algorithm - www.101computing.net/hogwarts-sorting-hat-algorithm
-# Needs fix currently cumilating all top scores no mater answer 15Jan... poss label inputs as var's
-
 print('''
 When a new student join Hogwarts school, 
 they are assigned to one of the four school houses depending on their personal qualities. 
@@ -18,51 +16,53 @@ R = 0
 H = 0
 S = 0
 
-input("Are you brave? ")
-if "yes":
+q1 = input("Are you brave? ")
+q2 = input("Are you patient? ")
+q3 = input("Are you focused? ")
+q4 = input("Are you creative? ")
+q5 = input("Are you organised? ")
+q6 = input("Are you kind? ")
+q7 = input("Do you play fair? ")
+q8 = input("Are you loyal? ")
+q9 = input("Are you competitive? ")
+q10 = input("Do you have strong friendship values? ")
+
+if q1 == "yes":
     G += 1
-input("Are you patient? ")
-if "yes":
-    H += 1
-if "no":
-    S += 1
-input("Are you focused? ")
-if "yes":
-    R += 1
-input("Are you creative? ")
-if "yes":
-    R += 1
-input("Are you organised? ")
-if "yes":
-    R += 1
-input("Are you kind? ")
-if "yes":
-    H += 1
-    R += 1
-    G += 1
-input("Do you play fair? ")
-if "yes":
-    H += 1
-    G += 1
-if "no":
-    S += 1
-input("Are you loyal? ")
-if "yes":
-    G += 1
-    R += 1
-if "no":
-    S += 1
-input("Are you competitive? ")
-if "yes":
-    G += 1
-    S += 1
-input("Do you value friendship? ")
-if "yes":
-    G += 1
-    R += 1
-    H += 1
-if "no":
-    S += 1
+    if q2 == "yes":
+        H += 1
+    elif q2 == "no":
+        S += 1
+        if q3 == "yes":
+            R += 1
+            if q4 == "yes":
+                R += 1
+                if q5 == "yes":
+                    R += 1
+                    if q6 == "yes":
+                        H += 1
+                        R += 1
+                        G += 1
+                        if q7 == "yes":
+                            H += 1
+                            G += 1
+                        elif q7 == "no":
+                            S += 1
+                            if q8 == "yes":
+                                G += 1
+                                R += 1
+                            elif q8 == "no":
+                                S += 1
+                                if q9 == "yes":
+                                    G += 1
+                                    S += 1
+                                    if q10 == "yes":
+                                        G += 1
+                                        R += 1
+                                        H += 1
+                                    elif q10 == "no":
+                                        S += 1
+
 print(f"Ravenclaw: {R} points")
 print(f"Hufflepuff: {H} points")
 print(f"Gryffindor: {G} points")

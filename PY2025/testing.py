@@ -48,3 +48,26 @@
 #     print("Even")
 # else:
 #     print("Odd")
+# import random
+# # randomInt = random.randint(1, 10)
+# # print(randomInt)
+# # random0To1 = random.random() * 10
+# # print(round(randomFloat, 3))
+# randomFloat = random.uniform(1, 10)
+# print(randomFloat)
+
+# import random
+# randomInt = random.randint(0, 1)
+# print(randomInt)
+# if randomInt == 0:
+#     print("Heads")
+# else:
+#     print("Tails")
+
+# fruit = ["apple", "banana", "peach", "orange"]
+# print(fruit[2])
+# fruit[0] = "Apple"
+# fruit.append("pear")
+# fruit.extend(["raspberry", "strawberry"])
+# fruit.remove("peach")
+# print(fruit)
