@@ -63,6 +63,7 @@ if q1 == "yes":
                                     elif q10 == "no":
                                         S += 1
 
+
 print(f"Ravenclaw: {R} points")
 print(f"Hufflepuff: {H} points")
 print(f"Gryffindor: {G} points")
